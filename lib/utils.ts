@@ -1,0 +1,1 @@
+export const daysArray = ["Dim.", "Lun.", "Mar.", "Mer.", "Jeu.", "Ven.", "Sam."]
