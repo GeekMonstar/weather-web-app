@@ -27,6 +27,25 @@ export async function getWeather(lon: number, lat: number): Promise<WeatherDataI
     }
 }
 
+export interface CityObject {
+  country: string,
+  lon: number,
+  lat: number,
+  name: string,
+  state: string
+}
+
+export interface WeatherObject {
+  city: {
+    name: string,
+    coordinates: {
+      lon: number,
+      lat: number
+    }
+  },
+  weather: WeatherDataInterFace
+}
+
 export interface WeatherDataInterFace {
     lat: number;
     lon: number;
